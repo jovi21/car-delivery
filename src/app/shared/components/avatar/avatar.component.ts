@@ -8,3 +8,14 @@ import { Component } from '@angular/core';
 export class AvatarComponent {
 
 }
+
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@NgModule({
+  imports: [CommonModule],
+  exports: [AvatarComponent],
+  declarations: [AvatarComponent],
+  providers: [],
+})
+export class AvatarModule { }
