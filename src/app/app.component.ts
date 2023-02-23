@@ -9,5 +9,5 @@ import { InputComponent } from './shared/components/input/input.component';
 })
 export class AppComponent {
   title = 'car-delivery';
-  customInputFormControl = new FormControl(null, Validators.minLength(7));
+  customInputFormControl = new FormControl(null, [Validators.minLength(7), Validators.pattern("(())")]);
 }

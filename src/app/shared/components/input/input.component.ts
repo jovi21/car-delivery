@@ -12,6 +12,8 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 export class InputComponent {
 
 @Input() minLength: number = 5;
+@Input() pattern: string = 'Debe contener...';
+
 @Input() label: string = 'Label';
 @Input() placeholder: string = 'Write a placeholder hear...';
 @Input() formControl!: FormControl;
