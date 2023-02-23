@@ -1,10 +1,9 @@
 <router-outlet>
   <app-button></app-button>
-  <pre>{{customInputFormControl.errors | json}}</pre>
   <app-input 
   [formControl]="customInputFormControl" 
   label="Phone Number" 
   placeholder="Placeholder test"
-  [minLength]="7">
+  [minLength]="8">
 </app-input>
 </router-outlet>
