@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/colors.scss';
+
+:root {
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --tertiary-color: #{$tertiary-color};
+    --success-color: #{$success-color};
+    --pink-color: #{$pink-color};
+    --orange-color: #{$orange-color};
+    --blueberry-color: #{$blueberry-color};
+    --green-color: #{$green-color};
+    --danger-color: #{$danger-color}; 
+    --light-gray-color: #{$light-gray-color};
+    --gray-color: #{$gray-color};
+    --blue-dark-color: #{$blue-dark-color};
+    --dark-color: #{$dark-color};
+}
