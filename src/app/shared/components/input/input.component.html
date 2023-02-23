@@ -1,1 +1,13 @@
-<p>input works!</p>
+<div class="container">
+    <label for="input" class="container__label">{{label}}</label>
+    <input 
+    type="text" 
+    id="input" 
+    class="container__input" 
+    [placeholder]="placeholder"
+    [formControl]="formControl"
+    [class.container__input--error]="formControl.invalid && formControl.touched">
+    <small *ngIf="formControl.errors"
+    class="messagge">La longitud debe ser mayor a {{minLength}}</small>
+  
+</div>

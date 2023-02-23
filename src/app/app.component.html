@@ -1,3 +1,8 @@
 <router-outlet>
   <app-button></app-button>
+  <app-input 
+  [formControl]="customInputFormControl" 
+  label="Input test" 
+  placeholder="Placeholder test"
+  [minLength]="7"></app-input>
 </router-outlet>
