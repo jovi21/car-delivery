@@ -14,7 +14,7 @@
         width: 316px;
         border-radius: 8PX;
         font-size: 14px;  
-        margin-bottom: 24px;
+       
         &--error{
             border: 1px solid red;
         }
@@ -22,6 +22,11 @@
             border: 1px solid green;
         }
        
+    }
+    .section{
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
     }
     .messagge{
         color: red;
