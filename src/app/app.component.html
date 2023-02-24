@@ -1,9 +1,12 @@
 <router-outlet>
   <app-button></app-button>
-  <app-input 
-  [formControl]="customInputFormControl" 
-  label="Phone Number" 
-  placeholder="Placeholder test"
-  [minLength]="7">
-</app-input>
+  <app-input [formControl]="customInputFormControl" label="Phone Number" placeholder="Placeholder test" [minLength]="7">
+  </app-input>
+  <app-icon name="icon-door" width="60" height="60">
+  </app-icon>
+
+  <app-icon name="icon-moderators" width="30" height="30" color="var(--orange-color)">
+  </app-icon>
+
+
 </router-outlet>
