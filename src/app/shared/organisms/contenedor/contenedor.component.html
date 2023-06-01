@@ -1,3 +1,10 @@
-<div class="container">
-{{name}}
+<div class="container" [style.background]="background">
+
+<div class="container__icon">
+    <app-icon name="{{icon}}" [color]="iconColor" width="48px" height="48px"></app-icon>
+</div>
+<p>{{name}}</p>
+<div class="container__icon">
+    <app-icon name="icon-arrow-left" width="48px" height="48px"></app-icon>
+</div>
 </div>

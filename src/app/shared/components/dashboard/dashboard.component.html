@@ -4,10 +4,13 @@
             <div>Knowelegde</div>
         </div>
         <div class="know-card">
-            <app-contenedor name="hola" />
-            <app-contenedor name="hola" />
+            <app-contenedor background="var(--blueberry-color)" name="Total Orders" icon="icon-folder" />
+            <app-contenedor background="pink" name="Total Earnings" icon="icon-folder" iconColor="var(--pink-color)"/>
+            <app-contenedor background="navajowhite" name="Profits" icon="icon-folder" iconColor="var(--orange-color)"/>
+
         </div>
         <div class="know-info">
+            <app-card-percent> </app-card-percent>
 
         </div>
     </div>
@@ -38,25 +41,10 @@
         </div>
     </div>
     <div class="container__table">
-
+   
+            <app-table [totalUsers]="totalCount" [tableHeaders]="headersArray" [arrayName$]="rideList$" (pageSelected)="onPageSelected($event)"></app-table>
+         
     </div>
 </div>
 
 
-<div class="container">
-    <div class="container__row">
-        <h1>Knowledge base</h1>
-        <div class="slider-container">
-            
-
-
-        </div>
-    </div>
-    <div container="container__percents">
-        <app-card-percent> </app-card-percent>
-    </div>
-    <div class="container__row">
-        <h1>Top Drivers</h1>
-
-    </div>
-</div>

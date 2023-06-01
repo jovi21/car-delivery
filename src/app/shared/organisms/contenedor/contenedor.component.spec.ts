@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { IconComponent } from '@shared/icon/icon.component';
 
 import { ContenedorComponent } from './contenedor.component';
 
@@ -8,7 +9,7 @@ describe('ContenedorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ ContenedorComponent ]
+      imports: [ ContenedorComponent, IconComponent ]
     })
     .compileComponents();
 

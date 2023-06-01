@@ -1,11 +1,15 @@
 
 .container{
-    width: 200px;
+   
     height: 100px;
     box-sizing: content-box;
-    border: red 10px solid;
     display: grid;
+    align-items: center;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
     column-gap: 20px;
+    border-radius: 8px;
+    &__icon{
+        width: 3%;
+    }
 }

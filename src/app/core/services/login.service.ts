@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from "../../../environments/environment";
 import { BehaviorSubject, catchError, mapTo, Observable, tap } from 'rxjs';
 import { handleError } from '@shared/functions/handle-error-function';
+import { UserLogin } from '@models/user.interface';
 
 
 @Injectable({
@@ -47,9 +48,4 @@ export class LoginService {
       this.changeUser(JSON.parse(user)); // Actualizar el valor del BehaviorSubject
     }
   }
-}
-interface UserLogin {
-  phoneNumber?: string;
-  password: string;
-  email?: string;
 }
