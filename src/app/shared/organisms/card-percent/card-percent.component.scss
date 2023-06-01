@@ -1,0 +1,28 @@
+.card{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  start;
+    padding-left: 20px;
+    color: black;
+    border: solid;
+    border-width: 2px;
+    border-color: #e7e7e7;
+    border-radius: 10px;
+    justify-content: left;
+
+    &__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 200, 97);
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+    }
+    
+}

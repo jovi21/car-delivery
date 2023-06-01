@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CardDriverComponent } from '@shared/organisms/card-driver/card-driver.component';
 
 import { DashboardComponent } from './dashboard.component';
 
@@ -8,7 +9,7 @@ describe('DashboardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DashboardComponent ]
+      imports: [ DashboardComponent, CardDriverComponent ]
     })
     .compileComponents();
 
