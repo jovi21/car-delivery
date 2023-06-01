@@ -2,9 +2,10 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
+import { IconComponent } from '@shared/icon/icon.component';
+import { SidebarComponent } from './sidebar.component';
 
-import { IconComponent } from '../../icon/icon.component';
-import { SidebarComponent } from '../../../shared/components/sidebar/sidebar.component';
+
 
 describe('SidebarComponent', () => {
   let component: SidebarComponent;

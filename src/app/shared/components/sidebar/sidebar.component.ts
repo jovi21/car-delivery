@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
 import { IconComponent } from '@shared/icon/icon.component';
-import { SidebarRoutes } from 'src/app/const/sidebar.const';
+import { SidebarRoutes } from '../../../const/sidebar.const';
 
 @Component({
   selector: 'app-sidebar',
