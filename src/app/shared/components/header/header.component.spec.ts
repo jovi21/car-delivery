@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { LoginService } from '@services/login.service';
+import { LoginService } from '@core/services/login.service';
 import { of } from 'rxjs';
 
 import { HeaderComponent } from './header.component';

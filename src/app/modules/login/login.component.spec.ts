@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
-import { LoginService } from '@services/login.service';
-import { mockLogin } from '@services/login.service.spec';
+import { LoginService } from '@core/services/login.service';
+import { mockLogin } from '@core/services/login.service.spec';
 import { of } from 'rxjs';
  
 

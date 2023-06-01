@@ -1,8 +1,8 @@
 import { HttpTestingController, HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { environment } from '../../environments/environment';
+import { environment } from '../../../environments/environment';
 
-import { LoginService } from '../../app/services/login.service';
+import { LoginService } from './login.service';
 
 export const mockLogin: any = {
   accessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhdGFAbWFpbC5jb20iLCJpYXQiOjE2ODIwMzA1MDMsImV4cCI6MTY4MjAzNDEwMywic3ViIjoiMyJ9.iFsnUXN3j81FaqMOlY8rbEVI30Yutwf07sKB2o6Wtpk",

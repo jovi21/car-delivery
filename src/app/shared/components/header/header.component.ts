@@ -1,6 +1,6 @@
 import { Component, Input} from '@angular/core';
 import { Router } from '@angular/router';
-import { LoginService } from '@services/login.service';
+import { LoginService } from '@core/services/login.service';
 import { map } from 'rxjs';
 
 
