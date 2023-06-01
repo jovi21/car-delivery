@@ -1,0 +1,38 @@
+<table class="table">
+    <thead class="table__head">
+        <tr class="table__head--tr">
+            <th *ngFor="let header of tableHeaders; let i=index " [innerHTML]="header.label"
+                class="table__head--th{{i+1}}"></th>
+        </tr>
+    </thead>
+    <tbody class="table__body">
+        <ng-container *ngFor="let item of arrayName$ | async">
+            <tr>
+                <ng-container *ngFor="let header of tableHeaders; let i=index ">
+                    <td *ngIf="'user' === header.label">
+                        <div class="table__body--user">
+                            <img class="table__body--img" [src]="item.user.avatar" [alt]="item.user.name">
+                            <div class="table__body--user-info">
+                                <span [innerHtml]="item.user.name "></span>
+                                <p [innerHTML]="item.user.phone"></p>
+                            </div>
+                        </div>
+                    </td>
+                    <td *ngIf="'user' !== header.label" [innerHtml]="item[header.property]"
+                        class="table__body--{{i+1}}"></td>
+                </ng-container>
+            </tr>
+        </ng-container>
+    </tbody>
+    <hr>
+    <div class="footer">
+        <p class="totalCount">Total users: {{totalUsers}}</p>
+        <div class="pagination">
+            <a (click)="pageSelected.emit(1)">1</a>
+            <a (click)="pageSelected.emit(2)">2</a>
+        </div>
+    </div>
+</table>
+<ng-template #noData>
+    <p>waiting for the data</p>
+</ng-template>

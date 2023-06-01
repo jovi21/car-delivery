@@ -1,0 +1,33 @@
+<div class=" shift-section">
+    <div class="shift-section__header">
+        <h1 class="shift-section__title">Shift Report</h1>
+<div class="shift-section__icon">
+    <app-icon name="icon-menu" class=""></app-icon>
+</div>
+       
+    </div>
+    <form class="form-container">
+       
+            <div class="form-container__item form-container__item--1">
+             <app-input [control]="name" label="Name" placeholder="Placeholder test" [minLength]="4" [border]="'solid 1px #E4E6EE'"></app-input>
+            </div>
+            <div class="form-container__item form-container__item--2">
+                <app-input [control]="perKm" label="Per KM" placeholder="Placeholder test" [minLength]="4" [border]="'solid 1px #E4E6EE'"></app-input>
+            </div>
+            <div class="form-container__item-full form-container__item--3">
+                <app-input [control]="value" label="Value" placeholder="Placeholder test" [minLength]="4" [border]="'solid 1px #E4E6EE'"></app-input>
+            </div>
+            <div class=" form-container__item--4">
+             <app-button name="Pay in"  [color]="'var(--primary-color)'" width="100%" height="34px" [border]="'solid 1px var(--primary-color)'" ></app-button>
+             </div>
+             <div class="form-container__item--5">
+                 <app-button name="Pay out" [color]="'var(--tertiary-color)'" width="100%" height="34px" [border]="'solid 1px var(--tertiary-color)'" ></app-button>
+             </div>
+       
+          
+    </form>
+  
+    <app-table [totalUsers]="totalCount" [tableHeaders]="headersArray" [arrayName$]="shiftList$" (pageSelected)="onPageSelected($event)"></app-table>
+
+
+</div>

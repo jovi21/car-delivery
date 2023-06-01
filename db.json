@@ -1,0 +1,198 @@
+{
+  "users": [
+    {
+      "email": "steve@mail.com",
+      "phoneNumber": "0912345678",
+      "password": "$2a$10$uXBz4dzDmPqV56pojyGENOgU0g/dJuQybIO/HIErQu1SHKtu71L7S",
+      "role": "Admin",
+      "firstName": "Steve",
+      "lastName": "Jimbo",
+      "age": 24,
+      "identification": "1726725318",
+      "id": 1
+    },
+    {
+      "email": "bryan@mail.com",
+      "phoneNumber": "+5939123451212",
+      "password": "$2a$10$qvFeH2gDFqil/ZM2NsW2D.JbkRUYNi6wTKA67j0CzhWGmwRCwmvcS",
+      "role": "Visitor",
+      "firstName": "Bryan",
+      "lastName": "Ron",
+      "age": 26,
+      "identification": "1723452319",
+      "id": 2
+    },
+    {
+      "email": "tata@mail.com",
+      "password": "$2a$10$MnuJeh9m7REy2eGA/paJweyXma6MR0pi6XO1tC0HV0DVzYDd2wm9e",
+      "phoneNumber": "09123453131",
+      "role": "Visitor",
+      "firstName": "Tata",
+      "lastName": "G",
+      "age": 27,
+      "identification": "1723452931",
+      "id": 3
+    },
+    {
+      "email": "prueba@mail.com",
+      "password": "$2a$10$Tb2ymLaJ8JDSFHAJohoZSuDVeuAWvljvaMssmdM75loPDCGg9x7dS",
+      "phoneNumber": "09783453131",
+      "role": "Admin",
+      "firstName": "Prueba",
+      "lastName": "T",
+      "age": 27,
+      "identification": "1723476931",
+      "id": 4
+    }
+  ],
+  "rides": [
+    {
+      "user": {
+        "name": "Sierra Ferguson",
+        "phone": "+593 995 836 045",
+        "avatar": "https://i.pravatar.cc/300"
+      },
+      "status": "pending",
+      "car_comfort": "simple",
+      "ordered_time": "04/10/2023 20:30:00",
+      "start_location": "El Corazón 320, Villaflora, Quito, Ecuador",
+      "finish_location": "Amazonas 445 y Pereria, Quito, Ecuador",
+      "income": "65.40"
+    },
+    {
+      "user": {
+        "name": "Sierra Ferguson",
+        "phone": "+593 995 836 045",
+        "avatar": "https://i.pravatar.cc/301"
+      },
+      "status": "pending",
+      "car_comfort": "convenient",
+      "ordered_time": "04/10/2023 20:30:00",
+      "start_location": "El Corazón 320, Villaflora, Quito, Ecuador",
+      "finish_location": "Amazonas 445 y Pereria, Quito, Ecuador",
+      "income": "35.44"
+    },
+    {
+      "user": {
+        "name": "Sierra Ferguson",
+        "phone": "+593 995 836 045",
+        "avatar": "https://i.pravatar.cc/302"
+      },
+      "status": "pending",
+      "car_comfort": "other",
+      "ordered_time": "04/10/2023 20:30:00",
+      "start_location": "El Corazón 320, Villaflora, Quito, Ecuador",
+      "finish_location": "Amazonas 445 y Pereria, Quito, Ecuador",
+      "income": "100.45"
+    },
+    {
+      "user": {
+        "name": "Sierra Ferguson",
+        "phone": "+593 995 836 045",
+        "avatar": "https://i.pravatar.cc/303"
+      },
+      "status": "progress",
+      "car_comfort": "simple",
+      "ordered_time": "04/10/2023 20:30:00",
+      "start_location": "El Corazón 320, Villaflora, Quito, Ecuador",
+      "finish_location": "Amazonas 445 y Pereria, Quito, Ecuador",
+      "income": "65.40"
+    },
+    {
+      "user": {
+        "name": "Sierra Ferguson",
+        "phone": "+593 995 836 045",
+        "avatar": "https://i.pravatar.cc/304"
+      },
+      "status": "progress",
+      "car_comfort": "convenient",
+      "ordered_time": "04/10/2023 20:30:00",
+      "start_location": "El Corazón 320, Villaflora, Quito, Ecuador",
+      "finish_location": "Amazonas 445 y Pereria, Quito, Ecuador",
+      "income": "35.44"
+    },
+    {
+      "user": {
+        "name": "Sierra Ferguson",
+        "phone": "+593 995 836 045",
+        "avatar": "https://i.pravatar.cc/305"
+      },
+      "status": "completed",
+      "car_comfort": "simple",
+      "ordered_time": "04/10/2023 20:30:00",
+      "start_location": "El Corazón 320, Villaflora, Quito, Ecuador",
+      "finish_location": "Amazonas 445 y Pereria, Quito, Ecuador",
+      "income": "65.40"
+    },
+    {
+      "user": {
+        "name": "Sierra Ferguson",
+        "phone": "+593 995 836 045",
+        "avatar": "https://i.pravatar.cc/306"
+      },
+      "status": "completed",
+      "car_comfort": "convenient",
+      "ordered_time": "04/10/2023 20:30:00",
+      "start_location": "El Corazón 320, Villaflora, Quito, Ecuador",
+      "finish_location": "Amazonas 445 y Pereria, Quito, Ecuador",
+      "income": "35.44"
+    },
+    {
+      "user": {
+        "name": "Sierra Ferguson",
+        "phone": "+593 995 836 045",
+        "avatar": "https://i.pravatar.cc/307"
+      },
+      "status": "completed",
+      "car_comfort": "simple",
+      "ordered_time": "04/10/2023 20:30:00",
+      "start_location": "El Corazón 320, Villaflora, Quito, Ecuador",
+      "finish_location": "Amazonas 445 y Pereria, Quito, Ecuador",
+      "income": "65.40"
+    },
+    {
+      "user": {
+        "name": "Sierra Ferguson",
+        "phone": "+593 995 836 045",
+        "avatar": "https://i.pravatar.cc/308"
+      },
+      "status": "completed",
+      "car_comfort": "convenient",
+      "ordered_time": "04/10/2023 20:30:00",
+      "start_location": "El Corazón 320, Villaflora, Quito, Ecuador",
+      "finish_location": "Amazonas 445 y Pereria, Quito, Ecuador",
+      "income": "35.44"
+    }
+  ],
+  "shift": [
+    {
+      "numberShift": "1",
+      "branchName": "Magic City Park",
+      "freeKm": "пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston"
+    },
+    {
+      "numberShift": "2",
+      "branchName": "Funlandia",
+      "freeKm": "9932+GQF, Тошкент, Oʻzbekiston"
+    },
+    {
+      "numberShift": "3",
+      "branchName": "Toshkent Xalqaro Aeroporti",
+      "freeKm": "13 Kumarik ko'chasi, Tashkent 100167, Oʻzbekiston"
+    }
+  ],
+  "moderators": [
+    {
+      "name": "user1",
+      "photo": "https://i.pravatar.cc/301"
+    },
+    {
+      "name": "user2",
+      "photo": "https://i.pravatar.cc/302"
+    },
+    {
+      "name": "user3",
+      "photo": "https://i.pravatar.cc/303"
+    }
+  ]
+}

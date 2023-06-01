@@ -1,0 +1,11 @@
+.progress-bar{
+    color: var(--dark-color);
+    border-bottom: 1px solid var(--dark-color) ;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 10px;
+    &__item{
+       
+     }
+}

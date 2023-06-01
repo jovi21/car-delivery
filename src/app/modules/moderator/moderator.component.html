@@ -1,0 +1,14 @@
+<section class="moderator-section">
+    <div class="moderator-section__header">
+        <h1 class="moderator-section__title">Moderators List</h1>
+        <button class="moderator-section__button">Add New Moderator</button>
+    </div>
+    <div class="card">
+        <ng-container *ngFor="let moderator of moderatorsList$ | async">
+            <div class="card__container">
+                <img [src]="moderator.photo" [alt]="moderator.name" class="card__img">
+                <h3 [innerHTML]="moderator.name|titlecase" class="card__title"></h3>
+            </div>
+        </ng-container>
+    </div>
+</section>

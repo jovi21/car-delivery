@@ -1,0 +1,14 @@
+<div class="client-section">
+  <div class="client-section__header">
+    <div class="search">
+      <h1 class="client-section__title">Client list</h1>
+    </div>
+    <div class="">
+      <app-button name="Add New Clients" [color]="'#ffffffff'" width="170px" height="38px" [border]="'none'" background="var(--primary-color)"></app-button>
+  </div>
+
+  </div>
+  <div class="table-wrapper">
+    <app-table [totalUsers]="totalCount" [tableHeaders]="headersArray" [arrayName$]="clientsList$" (pageSelected)="onPageSelected($event)"></app-table>
+  </div>
+</div>

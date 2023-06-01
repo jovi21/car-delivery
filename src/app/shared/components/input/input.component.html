@@ -5,17 +5,18 @@
     id="input" 
     class="container__input" 
     [placeholder]="placeholder"
-    [formControl]="formControl"
-    [class.container__input--error]="formControl.invalid && formControl.touched">
+    [style.border]="border"
+    [style.width]="width"
+    [formControl]="control"
+    [class.container__input--error]="control.errors && control.touched">
    
    <div class="section">
-       <small *ngIf="formControl.errors?.['required']"
+       <small *ngIf="control?.errors?.['required'] && control.touched"
        class="messagge">-Este campo es requerido</small>
-       <small *ngIf="formControl.errors?.['minlength']"
+       <small *ngIf="control?.errors?.['minlength'] "
        class="messagge">-La longitud debe ser mayor a {{minLength}}</small>
-       <small *ngIf="formControl.errors?.['pattern']"
+       <small *ngIf="control?.errors?.['pattern'] "
        class="messagge">-{{pattern}}</small>
    </div>
-
-  
+ 
 </div>

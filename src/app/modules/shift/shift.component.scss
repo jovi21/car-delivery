@@ -1,0 +1,76 @@
+
+.form-container {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    padding: 8px;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    grid-template-areas:
+        "item1 item2"
+        "item3 item3"
+        "item4 item5";
+}
+
+.form-container__item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-container__item--1 {
+    grid-area: item1;
+}
+
+.form-container__item--2 {
+    grid-area: item2;
+}
+
+.form-container__item--3 {
+    grid-area: item3;
+}
+
+.form-container__item--4 {
+    grid-area: item4;
+    // display: flex;
+    // justify-content:space-around;
+}
+.form-container__item--5 {
+    grid-area: item5;
+}
+
+
+/* Estilos adicionales para la apariencia de los elementos del formulario */
+.form-container__item label,
+.form-container__item input,
+.form-container__item-full label,
+.form-container__item-full input,
+.form-container__item-buttons button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.shift-section {
+    margin: 1.5rem auto;
+    max-width: 1000px;
+    width: 80%;
+    color: var(--blue-dark-color);
+
+    &__title {
+        color: var(--dark-color);
+    }
+
+    &__icon {
+        width: 5%;
+        height: 0;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

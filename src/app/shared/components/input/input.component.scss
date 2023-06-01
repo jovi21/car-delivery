@@ -9,11 +9,10 @@
         margin-bottom: 7px;
     }
     &__input {
-        border: solid 1px var(--dark-color);
         padding: 8PX;
-        width: 316px;
         border-radius: 8PX;
         font-size: 14px;  
+        outline: none;
        
         &--error{
             border: 1px solid var(--danger-color);

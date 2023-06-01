@@ -1,0 +1,40 @@
+<div class="container-login">
+    <div class="container-login__image">
+        <img class="container-login__background-login" src="https://img.freepik.com/vector-gratis/fondo-vista-acuarela-montana_52683-24633.jpg?w=996&t=st=1677625947~exp=1677626547~hmac=c8385d54995abbcf86f3091651935f98bc12d42bf50337955fd702a30abf1e04" alt="background_login">
+    </div>
+    <div class="form">
+        <div class="form__header">
+            <img class="form__logo" src="https://img.freepik.com/vector-gratis/diseno-logotipo-icono-montana-verde_474888-1986.jpg?w=740&t=st=1677626347~exp=1677626947~hmac=0172b3a1fcdf2093ac7ce6ae563c107c364b8c54fade08a65badb558c9d2d3ef" alt="logo_login">
+            <div class="form__title">Log In to Admin Panel</div>
+            <div class="form__subtitle">Enter your phone number and password below</div>
+        </div>
+        <div class="form__body">
+            <form action="" [formGroup]="loginForm" (submit)="sendLogin()">
+                <div class="input-group">
+                    <label for="PHONE NUMBER" class="input-group__label">EMAIL</label>
+                    <input type="text" class="input-group__input" placeholder="Enter your phone number" 
+                    [class.input-group__input--invalid]="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" formControlName="email">
+                    <small class="input-group--invalid" *ngIf="loginForm.get('email')?.errors?.['required'] && loginForm.get('email')?.touched">- This is required</small>
+                    <small class="input-group--invalid" *ngIf="loginForm.get('phoneNumber')?.errors?.['minlength'] && loginForm.get('phoneNumber')?.touched">- Your number must contain at least 10 characters </small>
+                    <small class="input-group--invalid" *ngIf="loginForm.get('phoneNumber')?.errors?.['pattern'] && loginForm.get('phoneNumber')?.touched">- Your number must start with 09 or +593 </small>
+                </div>
+                <div class="input-group">
+                    <label for="PASSWORD" class="input-group__label">PASSWORD</label>
+                    <input type="password" class="input-group__input" placeholder="Enter your password" 
+                    [class.input-group__input--invalid]="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" formControlName="password">
+                    <small class="input-group--invalid" *ngIf="loginForm.get('password')?.errors?.['required'] && loginForm.get('password')?.touched">- Invalid Password</small>
+                    <small class="input-group--invalid" *ngIf="loginForm.get('phoneNumber')?.errors?.['minlength'] && loginForm.get('phoneNumber')?.touched">- Your password must contain at least 10 characters </small>
+                    <small class="input-group--invalid" *ngIf="loginForm.get('password')?.errors?.['pattern'] && loginForm.get('password')?.touched">- Your password must contain at least one uppercase letter, one number, and one special character </small>
+
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="form-submit__btn"><img *ngIf="false" class="form-submit__loading" src="https://media3.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif?cid=6c09b9526a8hzy9fotaw8qnanfed458puff09thuf1a9joc0&rid=giphy.gif&ct=g"> Log In</button>
+                </div>
+            </form>
+        </div>
+        <div class="form__footer">
+            <p>Don't have account? <a class="form__link">Sign up</a></p>
+        </div>
+    </div>
+   
+</div>

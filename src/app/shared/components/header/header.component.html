@@ -1,0 +1,12 @@
+<div class="header">
+    <a class="header__menu"><app-icon name="icon-menu"></app-icon>   </a>
+    <div class="header__welcome">     
+        <p class="header__greatings">Good Morning, {{userName$|async}},👋</p>
+        <p class="header__messages">you have <a>1 new message</a></p>
+    </div>
+    <div class="header__logout">
+        <a class="header__btn-logout" (click)=" logout()"><app-icon name="icon-door"></app-icon></a>
+    </div>
+</div>
+<hr>
+

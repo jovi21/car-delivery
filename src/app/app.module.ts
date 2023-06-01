@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { CoreModule } from '@core/core.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ButtonComponent } from './shared/components/button/button.component';
-import { IconComponent } from './shared/components/icon/icon.component';
-import { InputComponent } from './shared/components/input/input.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +12,7 @@ import { InputComponent } from './shared/components/input/input.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonComponent,
-     InputComponent,  
-     IconComponent,
-    ReactiveFormsModule, 
-    FormsModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

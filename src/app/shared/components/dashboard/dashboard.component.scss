@@ -1,0 +1,56 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__knowledge{
+        background-color: aqua;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__drivers{
+        width: 30%;
+    }
+
+    &__table{
+        width: 100%;
+        background-color: red;
+    }
+}
+
+.drivers-header{
+    color: black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 15px;
+    justify-content: space-between;
+
+    &__title{
+        font-size: 20px;
+    }
+
+    &__icon{
+        font-size: 18px;
+    }
+}
+
+.drivers-body{
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.know-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

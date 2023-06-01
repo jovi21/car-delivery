@@ -16,6 +16,8 @@ export class InputComponent {
 
 @Input() label: string = 'Label';
 @Input() placeholder: string = 'Write a placeholder hear...';
-@Input() formControl!: FormControl;
+@Input() control!: FormControl;
+@Input() border: string = 'solid 1px var(--dark-color)';
+@Input() width: string = 'auto';
 
 }

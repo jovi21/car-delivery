@@ -1,0 +1,22 @@
+.client-section {
+
+  margin: 1.5rem auto;
+  max-width: 1000px;
+  width: 80%;
+
+  &__header {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    color: var(--blue-dark-color);
+  }
+}
+
+.table-wrapper {
+  color: var(--blue-dark-color);
+
+}

@@ -1,0 +1,53 @@
+hr{
+    border-width: 0px;
+    height: 1px;
+    background-color: #E5E7EB;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    &__welcome{
+        flex-basis: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__menu{
+        width: 5%;
+    }
+    &__greatings{
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        width: fit-content;
+    }
+    &__messages{
+        color: black;
+        padding-left: 15px;
+
+        a {
+            color: blue;
+            cursor: pointer;
+        }
+    }
+
+    &__logout{
+        display: flex;
+        padding-right: 20px;
+        justify-content: flex-end;
+        height: 100%;
+        flex-basis: 10%;
+    }
+
+    &__btn-logout{
+        width: 10%;
+        cursor: pointer;
+    }
+}

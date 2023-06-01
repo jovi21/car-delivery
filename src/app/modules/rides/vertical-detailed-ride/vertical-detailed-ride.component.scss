@@ -1,0 +1,23 @@
+.vertical{
+    display: flex;
+    flex-direction: column;
+}
+.horizontal{
+    display: flex;
+    flex-direction: row;
+}
+.img{
+    border-radius: 9999px;
+}
+.card{
+    background-color: #64E562;     
+    border-bottom: 1px solid var(blue-dark-color) ;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding-inline: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 1rem;
+    
+}
