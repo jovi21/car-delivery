@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IconComponent } from '@shared/icon/icon.component';
 
 @Component({
@@ -9,5 +9,6 @@ import { IconComponent } from '@shared/icon/icon.component';
   imports:[    IconComponent]
 })
 export class CardPercentComponent {
+  @Input() iconName: string = 'icon-map';
 
 }

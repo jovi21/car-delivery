@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ShiftComponent } from './shift.component';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ReactiveFormsModule } from '@angular/forms';
@@ -8,6 +7,7 @@ import { ButtonComponent } from '@shared/components/button/button.component';
 import { InputComponent } from '@shared/components/input/input.component';
 import { TableComponent } from '@shared/components/table/table.component';
 import { IconComponent } from '@shared/icon/icon.component';
+import { ShiftComponent } from './components/shift/shift.component';
 
 
 const routes: Routes = [

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 import { InputComponent } from './input.component';
 
@@ -10,12 +10,13 @@ describe('InputComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ InputComponent, ReactiveFormsModule, CommonModule ]
+      imports: [ ReactiveFormsModule, CommonModule]
     })
     .compileComponents();
 
     fixture = TestBed.createComponent(InputComponent);
     component = fixture.componentInstance;
+    component.control = new FormControl(); // 
     fixture.detectChanges();
   });
 

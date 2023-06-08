@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="container__knowledge">
+        <div class="know-head">
+            <h1 class="container__title">Knowlegde Base</h1>
+        </div>
+        <div class="know-card">
+            <app-contenedor background="var(--blueberry-color)" name="Total Orders" icon="icon-folder" />
+            <app-contenedor background="pink" name="Total Earnings" icon="icon-folder" iconColor="var(--pink-color)" />
+            <app-contenedor background="navajowhite" name="Profits" icon="icon-folder"
+                iconColor="var(--orange-color)" />
+        </div>
+        <div class="know-info">
+            <div class="know-info__card">
+                <app-card-percent iconName="icon-earphone"></app-card-percent>
+            </div>
+            <div class="know-info__card">
+                <app-card-percent iconName="icon-utility"></app-card-percent>
+            </div>
+            <div class="know-info__card">
+                <app-card-percent iconName="icon-microphone"></app-card-percent>
+            </div>
+            <div class="know-info__card">
+                <app-card-percent iconName="icon-book"></app-card-percent>
+            </div>
+        </div>
+
+    </div>
+    <div class="container__drivers">
+        <div class="drivers-header">
+            <h2 class="drivers-header__title">Top Drivers</h2>
+            <div class="drivers-header__icon"></div>
+        </div>
+        <div class="drivers-body">
+            <app-card-driver image="https://i.pravatar.cc/300" name="Steve Jimbo" phone="+593 995 083 604" orders="5"
+                income="98" />
+            <app-card-driver image="https://i.pravatar.cc/300" name="Daniela Gonzales" phone="+593 995 083 604"
+                orders="5" income="98" />
+            <app-card-driver image="https://i.pravatar.cc/300" name="Jessica Ballesteros" phone="+593 995 083 604"
+                orders="5" income="98" />
+        </div>
+    </div>
+    <div class="container__table">
+        <app-table [tableHeaders]="headersArray" [arrayName$]="rideList$"
+            (pageSelected)="onPageSelected($event)"></app-table>
+
+    </div>
+</div>

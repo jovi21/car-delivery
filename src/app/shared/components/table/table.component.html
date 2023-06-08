@@ -5,8 +5,8 @@
                 class="table__head--th{{i+1}}"></th>
         </tr>
     </thead>
+    <ng-container *ngFor="let item of arrayName$ | async">
     <tbody class="table__body">
-        <ng-container *ngFor="let item of arrayName$ | async">
             <tr>
                 <ng-container *ngFor="let header of tableHeaders; let i=index ">
                     <td *ngIf="'user' === header.label">
@@ -22,16 +22,16 @@
                         class="table__body--{{i+1}}"></td>
                 </ng-container>
             </tr>
-        </ng-container>
-    </tbody>
-    <hr>
-    <div class="footer">
-        <p class="totalCount">Total users: {{totalUsers}}</p>
-        <div class="pagination">
-            <a (click)="pageSelected.emit(1)">1</a>
-            <a (click)="pageSelected.emit(2)">2</a>
+        </tbody>
+    </ng-container>
+        <hr>
+        <div class="footer">
+            <p class="totalCount">Total users: {{totalUsers}}</p>
+            <div class="pagination">
+                <a (click)="pageSelected.emit(1)">1</a>
+                <a (click)="pageSelected.emit(2)">2</a>
+            </div>
         </div>
-    </div>
 </table>
 <ng-template #noData>
     <p>waiting for the data</p>

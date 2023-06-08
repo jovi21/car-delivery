@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { TableHeader } from '@models/rides.interface';
-import { Observable } from 'rxjs';
+import { TableHeader } from '@core/models/interfaces/rides.interface';
+import { Observable, tap } from 'rxjs';
 
 @Component({
   selector: 'app-table',
@@ -15,8 +15,6 @@ export class TableComponent {
 @Input() tableHeaders: TableHeader[] = [];
 @Input() totalUsers: number = 98;
 @Output() pageSelected = new EventEmitter<number>();
-
-
 
 
 }

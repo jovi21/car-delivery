@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ClientsComponent } from './clients.component';
+import { ClientsComponent } from './components/clients/clients.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ButtonComponent } from '@shared/components/button/button.component';
 import { TableComponent } from '@shared/components/table/table.component';

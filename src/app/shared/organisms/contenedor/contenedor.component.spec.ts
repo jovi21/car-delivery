@@ -9,7 +9,6 @@ describe('ContenedorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ ContenedorComponent, IconComponent ]
     })
     .compileComponents();
 

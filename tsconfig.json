@@ -35,13 +35,13 @@
         "./src/app/modules/*"
        ],
       "@models/*": [ 
-        "./src/app/models/*"
+        "src/app/core/models/*"
        ],
       "@mocks/*": [
-         "./src/app/mocks/*" 
+         "src/app/core/models/mocks/*" 
         ],
       "@services/*": [ 
-        "./src/app/services/*" 
+        "src/app/shared/services/*" 
       ],
       "@shared/*": [
          "./src/app/shared/*"

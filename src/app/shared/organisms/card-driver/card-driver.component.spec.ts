@@ -8,7 +8,6 @@ describe('CardDriverComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ CardDriverComponent ]
     })
     .compileComponents();
 

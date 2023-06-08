@@ -9,7 +9,6 @@ describe('CardPercentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ CardPercentComponent,  IconComponent ]
     })
     .compileComponents();
 
